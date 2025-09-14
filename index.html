@@ -28,20 +28,6 @@
     L.imageOverlay('./gta_map.jpg', bounds).addTo(map);
     map.fitBounds(bounds);
 
-// Quand tu cliques, un marqueur est ajouté
-map.on('click', function(e) {
-  var coord = e.latlng;
-  var x = Math.round(coord.lng);
-  var y = Math.round(coord.lat);
-
-  // Ajoute le marqueur avec une popup
-  var marker = L.marker([y, x]).addTo(map)
-    .bindPopup("Point placé ici<br>Y=" + y + " X=" + x)
-    .openPopup();
-
-  console.log("Marqueur ajouté : Y=" + y + " X=" + x);
-});
-
 // Groupe Go-Fast
 var goFast = L.layerGroup([
     L.marker([1368, 1171]).bindPopup("<b>Go-Fast 🚤</b><br>Grapeseed direction Cayo"),
@@ -75,3 +61,4 @@ L.control.layers(null, overlays).addTo(map);
   </script>
 </body>
 </html>
+
