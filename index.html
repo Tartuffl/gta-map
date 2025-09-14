@@ -41,6 +41,14 @@ map.on("click", function(e) {
     });
 });
 
+    map.on("click", function(e) {
+    // Affiche les coordonnées dans une popup
+    L.popup()
+      .setLatLng(e.latlng)
+      .setContent("Coordonnées : " + e.latlng.lat.toFixed(0) + ", " + e.latlng.lng.toFixed(0))
+      .openOn(map);
+});
+    
 // Groupe Go-Fast
 var goFast = L.layerGroup([
     L.marker([1368, 1171]).bindPopup("<b>Go-Fast 🚤</b><br>Grapeseed direction Cayo"),
@@ -74,3 +82,4 @@ L.control.layers(null, overlays).addTo(map);
   </script>
 </body>
 </html>
+
