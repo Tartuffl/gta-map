@@ -55,7 +55,7 @@ var goFast = L.layerGroup([
     L.marker([513, 776]).bindPopup("<b>Go-Fast 🚤</b><br>Vespucci Direction Cayo"),
     L.marker([239, 817]).bindPopup("<b>Go-Fast 🚗</b><br>Aéroport"),
     L.marker([120, 1145]).bindPopup("<b>Go-Fast 🚗</b><br>Quai"),
-    L.marker([1748, 1180]).bindPopup("<b>Go-Fast 🚗</b><br>Paleto")
+    L.marker([1748, 1180]).bindPopup("<b>Go-Fast 🚗</b><br>Paleto"),
 ]);
 
 // Ajouter le groupe par défaut sur la carte
@@ -68,7 +68,8 @@ var digiscan = L.layerGroup([
 var receleur = L.layerGroup([
     L.marker([1231, 1277]).bindPopup("<b>Receleur 🧳</b><br>Vehicule"),
     L.marker([505, 1060]).bindPopup("<b>Receleur 🧳</b><br>Bijoux"),
-    L.marker([246, 1089]).bindPopup("<b>Receleur 🧳</b><br>Cambriolage")
+    L.marker([246, 1089]).bindPopup("<b>Receleur 🧳</b><br>Cambriolage"),
+    L.marker([519, 680]).bindPopup("<b>Receleur 🧳</b><br>Chasseur éspèce protégée")
 ]);
 
 var overlays = {
@@ -82,4 +83,5 @@ L.control.layers(null, overlays).addTo(map);
   </script>
 </body>
 </html>
+
 
