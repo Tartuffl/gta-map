@@ -65,6 +65,43 @@ var digiscan = L.layerGroup([
     L.marker([1290, 1543]).bindPopup("<b>Digiscan 🔍</b><br>")
 ]);
 
+var mexicain = L.layerGroup([
+    L.marker([330, 782]).bindPopup("<b>Mexicain 🌵</b><br>Position 1"),
+    L.marker([276, 836]).bindPopup("<b>Mexicain 🌵</b><br>Position 2"),
+    L.marker([242, 815]).bindPopup("<b>Mexicain 🌵</b><br>position 3"),
+    L.marker([140, 975]).bindPopup("<b>Mexicain 🌵</b><br>Position 4"),
+    L.marker([185, 1014]).bindPopup("<b>Mexicain 🌵</b><br>Position 5"),
+    L.marker([191, 1091]).bindPopup("<b>Mexicain 🌵</b><br>Position 6"),
+    L.marker([177, 1143]).bindPopup("<b>Mexicain 🌵</b><br>Position 7"),
+    L.marker([128, 1036]).bindPopup("<b>Mexicain 🌵</b><br>Position 8"),
+    L.marker([319, 1035]).bindPopup("<b>Mexicain 🌵</b><br>Position 9"),
+    L.marker([588, 1103]).bindPopup("<b>Mexicain 🌵</b><br>Position 10"),
+    L.marker([361, 1274]).bindPopup("<b>Mexicain 🌵</b><br>Position 11"),
+    L.marker([545, 1402]).bindPopup("<b>Mexicain 🌵</b><br>Position 12"),
+    L.marker([656, 1213]).bindPopup("<b>Mexicain 🌵</b><br>Position 13"),
+    L.marker([812, 1398]).bindPopup("<b>Mexicain 🌵</b><br>Position 14"),
+    L.marker([686, 1060]).bindPopup("<b>Mexicain 🌵</b><br>Position 15"),
+    L.marker([647, 715]).bindPopup("<b>Mexicain 🌵</b><br>Position 16"),
+    L.marker([714, 562]).bindPopup("<b>Mexicain 🌵</b><br>Position 17"),
+    L.marker([796, 1193]).bindPopup("<b>Mexicain 🌵</b><br>Position 18"),
+    L.marker([917, 1406]).bindPopup("<b>Mexicain 🌵</b><br>Position 19"),
+    L.marker([971, 1140]).bindPopup("<b>Mexicain 🌵</b><br>Position 20"),
+    L.marker([1127, 920]).bindPopup("<b>Mexicain 🌵</b><br>Position 21"),
+    L.marker([1441, 895]).bindPopup("<b>Mexicain 🌵</b><br>Position 22"),
+    L.marker([1099, 592]).bindPopup("<b>Mexicain 🌵</b><br>Position 23"),
+    L.marker([1256, 1000]).bindPopup("<b>Mexicain 🌵</b><br>Position 24"),
+    L.marker([1267, 1510]).bindPopup("<b>Mexicain 🌵</b><br>Position 25"),
+    L.marker([1384, 1152]).bindPopup("<b>Mexicain 🌵</b><br>Position 26"),
+    L.marker([1496, 1150]).bindPopup("<b>Mexicain 🌵</b><br>Position 27"),
+    L.marker([1523, 581]).bindPopup("<b>Mexicain 🌵</b><br>Position 28"),
+    L.marker([1030, 454]).bindPopup("<b>Mexicain 🌵</b><br>Position 29"),
+    L.marker([0, 0]).bindPopup("<b>Mexicain 🌵</b><br>Position 30"),
+    L.marker([0, 0]).bindPopup("<b>Mexicain 🌵</b><br>Position 31"),
+    L.marker([1702, 862]).bindPopup("<b>Mexicain 🌵</b><br>Position 32"),
+    L.marker([1755, 1000]).bindPopup("<b>Mexicain 🌵</b><br>Position 33"),
+    L.marker([1708, 1174]).bindPopup("<b>Mexicain 🌵</b><br>Position 34"),
+]);
+  
 var table = L.layerGroup([
     L.marker([1814, 964]).bindPopup("<b>Table ⚙️</b><br>"),
     L.marker([1397, 987]).bindPopup("<b>Table ⚙️</b><br>"),
@@ -85,7 +122,8 @@ var overlays = {
     "Go-Fast 🚤/🚗": goFast,
     "Digiscan 🔍": digiscan,
     "Receleur 🧳": receleur,
-    "Table ⚙️": table
+    "Table ⚙️": table,
+    "Mexicain 🌵": mexicain
 };
 
 L.control.layers(null, overlays).addTo(map);
@@ -93,6 +131,7 @@ L.control.layers(null, overlays).addTo(map);
   </script>
 </body>
 </html>
+
 
 
 
