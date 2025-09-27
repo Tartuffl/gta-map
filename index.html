@@ -65,6 +65,15 @@ var digiscan = L.layerGroup([
     L.marker([1290, 1543]).bindPopup("<b>Digiscan 🔍</b><br>")
 ]);
 
+var table = L.layerGroup([
+    L.marker([1814, 964]).bindPopup("<b>Table ⚙️</b><br>"),
+    L.marker([1397, 987]).bindPopup("<b>Table ⚙️</b><br>"),
+    L.marker([947, 1315]).bindPopup("<b>Table ⚙️</b><br>"),
+    L.marker([485, 1149]).bindPopup("<b>Table ⚙️</b><br>"),
+    L.marker([321, 1191]).bindPopup("<b>Table ⚙️</b><br>"),
+    L.marker([151, 1030]).bindPopup("<b>Table ⚙️</b><br>"),
+]);
+
 var receleur = L.layerGroup([
     L.marker([1231, 1277]).bindPopup("<b>Receleur 🧳</b><br>Vehicule"),
     L.marker([505, 1060]).bindPopup("<b>Receleur 🧳</b><br>Bijoux"),
@@ -75,7 +84,8 @@ var receleur = L.layerGroup([
 var overlays = {
     "Go-Fast 🚤/🚗": goFast,
     "Digiscan 🔍": digiscan,
-    "Receleur 🧳": receleur
+    "Receleur 🧳": receleur,
+    "Table ⚙️": table
 };
 
 L.control.layers(null, overlays).addTo(map);
@@ -83,6 +93,7 @@ L.control.layers(null, overlays).addTo(map);
   </script>
 </body>
 </html>
+
 
 
 
