@@ -72,20 +72,10 @@ var receleur = L.layerGroup([
     L.marker([519, 680]).bindPopup("<b>Receleur 🧳</b><br>Chasseur espèce protégée"),
 ]);
 
-var tables = L.layerGroup([
-    L.marker([1820, 963]).bindPopup("<b>Tables ⚙️</b><br>"),
-    L.marker([1385, 985]).bindPopup("<b>Tables ⚙️</b><br>"),
-    L.marker([949, 1313]).bindPopup("<b>Tables ⚙️</b><br>"),
-    L.marker([471, 1155]).bindPopup("<b>Tables ⚙️</b><br>"),
-    L.marker([315, 1191]).bindPopup("<b>Tables ⚙️</b><br>"),
-    L.marker([156, 1030]).bindPopup("<b>Tables ⚙️</b><br>"),
-]);
-
 var overlays = {
     "Go-Fast 🚤/🚗": goFast,
     "Digiscan 🔍": digiscan,
-    "Receleur 🧳": receleur,
-    "Tables ⚙️": tables
+    "Receleur 🧳": receleur
 };
 
 L.control.layers(null, overlays).addTo(map);
@@ -93,6 +83,7 @@ L.control.layers(null, overlays).addTo(map);
   </script>
 </body>
 </html>
+
 
 
 
